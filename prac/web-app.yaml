@@ -32,7 +32,7 @@ spec:
               key: mongo-password
         - name: ME_CONFIG_MONGODB_SERVER
           valueFrom:
-            sconfigMapKeyRef: 
+            configMapKeyRef: 
               name: mongo-config
               key: mongo-url
 
@@ -43,7 +43,7 @@ metadata:
   name: webapp-service
 spec:
   selector:
-    app.kubernetes.io/name: webapp
+    app: webapp
   ports:
     - protocol: TCP
       port: 8081

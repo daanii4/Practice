@@ -23,12 +23,12 @@ spec:
         - name: ME_CONFIG_BASICAUTH_USERNAME
           valueFrom:
             secretKeyRef: 
-              name: secret
+              name: mongo-secret
               key: mongo-user
         - name: ME_CONFIG_BASICAUTH_PASSWORD
           valueFrom:
             secretKeyRef: 
-              name: secret
+              name: mongo-secret
               key: mongo-password
         - name: ME_CONFIG_MONGODB_SERVER
           valueFrom:

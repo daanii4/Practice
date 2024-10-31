@@ -1,0 +1,318 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #212121;
+    margin: 0;
+    padding: 0;
+}
+  
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a237e;
+}
+  
+/* General button styling */
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+button:hover {
+    background-color: #005f56;
+}
+  
+button:active {
+    transform: scale(0.98);  /* Subtle feedback on button click */
+}
+  
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+  
+/* Input fields */
+input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+/* Form styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+/* Ad Preview */
+.ad-preview {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ff7043;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+  
+/* Progress Tracker */
+.progress-tracker ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.progress-tracker ul li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+  
+/* Login Container */
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    color: #1a237e;
+    margin-bottom: 1.5rem;
+}
+
+.login-container button {
+    padding: 0.8rem 2.5rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.login-container button:hover {
+    background-color: #005f56;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.login-container button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 121, 107, 0.5); /* Glow effect when button is focused */
+}
+
+.google-login-button {
+    margin-top: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.login-container input:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5); /* Subtle glow on focus */
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Chatbox Styles */
+.chatbox {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Prevent resizing */
+    min-height: 100px; /* Minimum height */
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.ad-details {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip:hover::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* Projects Page Styles */
+.projects-page {
+    background-color: #ffcccc; /* Warm red background */
+    min-height: 100vh; /* Full height to cover the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 2rem; /* Add some padding */
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif; /* Consistent font */
+    color: #1a237e; /* Deep navy color for contrast */
+    margin-bottom: 1rem;
+}
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+/* New Project Button */
+.create-project-button {
+    background-color: #00796b; /* Green button */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem; /* Adjust font size */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.create-project-button:hover {
+    background-color: #005f56; /* Darker green on hover */
+}
+
+/* Plus Sign Icon */
+.create-project-button::before {
+    content: '+'; /* Plus sign */
+    font-size: 2rem; /* Size of the plus sign */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the plus sign */
+}
+
+/* Project List */
+.project-list {
+    width: 100%;
+    max-width: 600px; /* Max width for better readability */
+    margin-top: 2rem; /* Space from the button */
+    padding: 1rem;
+    background-color: #fff; /* White background for project list */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between; /* Space between item name and edit button */
+    align-items: center; /* Center align vertically */
+    background-color: #f9f9f9; /* Light background for items */
+    margin: 0.5rem 0; /* Spacing between items */
+    padding: 0.8rem; /* Padding for each item */
+    border-radius: 8px; /* Rounded corners for items */
+}
+
+.project-item:hover {
+    background-color: #eeeeee; /* Highlight on hover */
+}
+
+.edit-button {
+    background-color: #2196F3; /* Blue color for edit button */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+.error {
+    color: red; /* Red text for error */
+    margin: 10px 0; /* Space around the error message */
+    font-weight: bold; /* Make it bold */
+}

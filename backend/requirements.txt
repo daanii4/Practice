@@ -1,0 +1,12 @@
+fastapi==0.103.0
+uvicorn==0.23.0
+sqlalchemy==2.0.17
+psycopg2-binary==2.9.6
+pydantic==2.3.0
+python-dotenv==1.0.0
+python-multipart==0.0.6
+jose==1.11.0
+requests==2.31.0
+alembic==1.11.1
+bcrypt==4.0.1
+email-validator==2.1.0
